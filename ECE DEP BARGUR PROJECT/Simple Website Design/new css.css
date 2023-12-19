@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+header{
+  height: 90vh;
+  width: 100%;
+  background: url("images/background.png")center ;
+
+  
+}
+::selection{
+  background: #a3f5ec;
+}
+header p{
+  color: #1de2d1;
+  padding-bottom: 5px;
+ 
+ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+ font-weight:bolder ;
+ width : 100%;
+ font-size : 30px;
+ letter-spacing: 1px;
+ margin-left:20px;
+}
+header nav{
+  position:static;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 12;
+}
+
+.navbar{
+  
+  width: 90%;
+  display: flex;
+  margin: 20px auto 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+  header nav .logo{
+  height: 80px;
+  width: 200px;
+}
+.logo img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.navbar .menu{
+  display: flex;
+}
+.navbar .menu li{
+  
+  position: relative;
+  list-style:none;
+  margin: 0 15px;
+  padding: 6px;
+
+}
+.navbar .menu a{
+ 
+  color: #2c3e50;
+  font-size: 18px;
+  font-weight:bolder;
+  text-decoration: none;
+  text-size-adjust:inherit ;
+ 
+}
+.navbar .menu a:hover{
+  color: #000;
+}
+.navbar .search-box{
+  position: relative;
+  height: 40px;
+  width: 250px;
+}
+.search-box input[type="text"]{
+  position: absolute;
+  font-size: 18px;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  outline: none;
+  color: #2c3350;
+  border: 2px solid #2c3350;
+  background: #f2f2f2;
+  padding: 0 10px 0 40px;
+}
+.search-box a{
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  font-size: 20px;
+  color: #2c3350;
+  transform: translateY(-50%);
+  border-right: 2px solid #2c3350;
+  padding: 0 5px 0 0;
+}
+.text-content{
+  position: absolute;
+  top: 33%;
+  left: 7%;
+  right:5%;
+  z-index: 12;
+}
+header .text-content .text{
+  
+ 
+  font-size: 31px;
+  padding-left: 5px;
+  color: #2c3350;
+  padding-bottom: 5px;
+}
+header .text-content .name{
+padding-right: 5px;
+color: #2c3350;
+ font-size: 37.5px;
+ font-weight: bolder;
+ padding-bottom: 5px;
+ padding-top: 10px;
+ 
+ padding-right: 7px;
+}
+header .text-content .job{
+ color: #2c3350;
+ font-size: 35px;
+ padding-bottom: 5px;
+
+ 
+ margin-top: -4px;
+ 
+}
+.text-content .typing-text{
+
+  overflow: hidden;
+  white-space: nowrap;
+  order-right: 0px solid #1de2d1;
+  animation:typing 8s steps(18) infinite ;
+}
+@keyframes typing{
+  0%{
+    width: 0ch;
+  }
+  50%{
+    width: 35ch;
+  }
+  100%{
+    width: 0ch;
+  }
+}
+.text-content .job .one{
+  color: #1de2d1;
+}
+.text-content .job .two{
+  color: #1de2d1;
+}
+.buttons{
+  padding-right: 20px;
+  padding-top: 15px;
+}
+.buttons a{
+  color: black;
+  text-decoration:none;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-shadow: #2AFADF;
+}
+.text-content .buttons button{
+  outline: none;
+  margin: 0 10px;
+  border: none;
+  border-radius: 7px;
+  font-size: 18px;
+  
+  color: #fff;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  background-image: linear-gradient( 135deg, #2AFADF     10%, #C346C2 100%);
+}
+.buttons button:hover{
+  transform: scale(0.97);
+}
+.content .girl img{
+  position: absolute;
+  height: 50%;
+  bottom: 0;
+  right: 80px;
+  position: absolute;
+  padding-bottom: 40px;
+}
+header .media-icons{
+  display: flex;
+  flex-direction: column;
+  position:fixed;
+  right: 30px;
+  bottom: 175px;
+  
+}
+
+
+.dropdown_menu{
+  display : none;
+
+  
+}
+
+
+
+.navbar .menu  li:hover  .dropdown_menu{
+  display: block;
+  width: max-content;
+  height:max-content;
+
+
+  
+  position: absolute;
+
+
+
+
+}
+.navbar .menu  li:hover .dropdown_menu ul{
+  display: block;
+  margin : 15px;
+  margin-top: auto;
+  height:max-content;
+  touch-action: auto;
+  
+ 
+
+}
+.navbar .menu  li:hover .dropdown_menu ul li{
+  touch-action: auto;
+  width : 100px;
+  padding : 10px;
+  height: max-content;
+
+}
+.fas{
+  float: right;
+  margin-left:10px;
+  padding-top:3px;
+}
+.extra{
+  width: 500px;;
+  height:600px;
+}
+
+.narayana{
+  padding-top: -100px;
+  background: url(./Futuristic-Tech-Wallpapers-Images.jpg.crdownload);
+}
+.new{
+  padding-top: 100px;
+  padding-bottom: 200px;
+  background: url();
+  max-width: max-content;
+  padding-left: 50px;
+}
+.manj{
+  padding-top: 100px;
+}
+.SIVA{
+  color:aliceblue;
+}
